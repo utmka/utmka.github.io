@@ -28,26 +28,26 @@ body textarea:required:valid {
 }
 
 p {
-	font-family: 'LatoWeb';
-	font-weight: 500;
+	font-family: 'LatoWeb' !important;
+	font-weight: 500 !important;
 }
  
 h1 {
-	font-weight: 900;
-	color: #656565;
-	font-style: italic;
-	font-size: 72px;
-	margin-bottom: 0px;
-  margin-top: 5px;
+	font-weight: 900 !important;
+	color: #656565 !important;
+	font-style: italic !important;
+	font-size: 72px !important;
+	margin-bottom: 0px !important;
+  margin-top: 5px !important;
 }
 
 h3 {
-	font-weight: 600;
-	margin-top: 50px;
+	font-weight: 600 !important;
+	margin-top: 50px !important;
 }
 
 b {
-	font-weight: 600;
+	font-weight: 600 !important;
 }
 
 
