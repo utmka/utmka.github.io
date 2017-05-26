@@ -29,6 +29,10 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	 <link rel="stylesheet" type="text/css" href="/_fonts.css" />
+	 <link rel="stylesheet" type="text/css" href="/_header.css" />
+	 <link rel="stylesheet" type="text/css" href="/_main.css" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
 
@@ -93,17 +97,7 @@
 	<![endif]-->
 
 	<!-- Load CSS -->
-	<script>
-		function loadCSS(hf) {
-			var ms=document.createElement("link");ms.rel="stylesheet";
-			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
-		}
-		loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
-		loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
-		loadCSS("_main.css");                //User Styles: Main
-		loadCSS("_media.css");       
-		loadCSS("_fonts.css");         //User Styles: Media
-	</script>
+
 
 	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
 	<script>var ms=document.createElement("link");ms.rel="stylesheet";
