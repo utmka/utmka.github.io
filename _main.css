@@ -1,0 +1,120 @@
+
+
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+p {
+	font-family: 'LatoWeb';
+	font-weight: 400;
+}
+
+h1{
+	font-weight: 900;
+	color: #656565;
+	font-style: italic;
+	font-size: 72px;
+	margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+h3 {
+	font-weight: 600;
+	margin-top: 50px;
+}
+
+b {
+	font-weight: 600;
+}
+
+
+
+.menu{
+	list-style-type: none;
+	display: flex;
+    margin: 10px 0px 50px;
+	padding: 0;
+}
+
+.button_link {
+	display: block;
+	margin-right: 60px;
+	padding: 20px 50px;
+	border: 1px solid #C0C2CE;
+	border-radius:5px;
+	text-decoration: none;
+	color: #C0C2CE;
+transition: ease 0.2s;
+}
+.button_link:hover {
+	text-decoration: none;
+	color: #C0C2CE;
+	background-color: #FAFAFA;
+}
+.button_link:active {
+	text-decoration: none;
+	color: #303030;
+	background-color: #FDF06F;
+	border: 1px solid #FDF06F;
+}
+
+.button_link:focus {
+	text-decoration: none;
+	color: #303030;
+	background-color: #FDF06F;
+	border: 1px solid #FDF06F;
+}
+
+.input_href {
+	    height: 50px;
+    width: 80%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #c0c2ce;
+    padding: 15px;
+
+}
+.input_href:focus {
+border: 1px solid #FDF06F;
+outline: none;
+	color: #303030;
+}
+
+.Active {
+	text-decoration: none;
+	color: #303030;
+	background-color: #FDF06F;
+	border: 1px solid #FDF06F;
+}
+
+:input-placeholder {
+color: #303030;
+font-weight: 100;
+}
+
+.font_href {
+	font-weight: 500;
+}
+
