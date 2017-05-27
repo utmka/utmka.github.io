@@ -16,10 +16,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="js/common.js"></script>
+
 
 
 
@@ -27,8 +32,8 @@
 
 <body>
 
-<div class="container" ng-app>
-	<div class="row">
+<div class="container" ng-app="utmApp">
+	<div class="row" ng-controller="utmAddController">
 
 		<div class="col-xs-12"><h1>ЮТМка</h1></div>
 		<div class="col-md-8">
@@ -43,11 +48,11 @@
 		<div class="col-md-12">
 		<h3>Выбираем рекламную сеть</h3>
 		<nav>
-			<ul class="menu">
-				<li><a id="yandex.search_btm" href="#yandex.search" class="button_link" ng-click="utm = '?utm_source=yandex.search&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}'">Яндекс:Поиск</a></li>
-				<li><a href="#yandex.context" class="button_link" ng-click="utm = '?utm_source=yandex.context&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}'">Яндекс:РСЯ</a></li>
-				<li><a href="#google.search" class="button_link" ng-click="utm = '?utm_source=google.search&utm_medium=cpc&utm_campaign={campaignid}&utm_content={creative}&utm_term={keyword}'">Гугл:Поиск</a></li>
-				<li><a href="#google.context" class="button_link" ng-click="utm = '?utm_source=google.kms&utm_medium=cpc&utm_campaign={campaignid}&utm_content={creative}&placement={placement}&utm_term={keyword}'">Гугл:КМС</a></li>
+			<ul class="menu" >
+				<li><a id="yandex.search_btm" href="#yandex.search" class="button_link" ng-click="utmAddSearchYandex()">Яндекс:Поиск</a></li>
+				<li><a href="#yandex.context" class="button_link" ng-click="utmAddContextYandex()">Яндекс:РСЯ</a></li>
+				<li><a href="#google.search" class="button_link" ng-click="utmAddSearchGoogle()">Гугл:Поиск</a></li>
+				<li><a href="#google.context" class="button_link" ng-click="utmAddContextGoogle">Гугл:КМС</a></li>
 			</ul>
 			</nav>
 
@@ -58,16 +63,19 @@
 <div class="col-md-8 test">
 <b> <i> Готовая ссылка: </i></b>
 <br>
-	<p class="font_href" id="post-shortlink">{{yourHref}}{{utm}}  {{count}}</p>
+	<p class="font_href" id="post-shortlink">{{yourHref}}{{utm}} {{count}}</p>
+</div>
+</div>
 </div>
 </div>
 <footer id="footer">
 			<div class="col-md-8 margin-top">
 				<p> <span style="font-weight: 600;"> Важно:</span>  Всегда проверяйте ссылку перед тем как отправить ее в рекламную кампанию</p>
 			</div>
-	</div>
+
 </footer>	
 </div>
+
 
 
 
