@@ -41,7 +41,7 @@
 		</div>
 		<div class="col-md-12">
 					<nav>
-			<ul class="menu" >
+			<ul class="menu" style="  margin: 10px 0px 0px;">
 				<li><a id="/" href="/" class="button_link" >Контекстная реклама</a></li>
 				<li><a href="/social" class="button_link">Социальные сети</a></li>
 				
@@ -57,7 +57,7 @@
 		<div class="col-md-12">
 		<h3>Выбираем рекламную сеть</h3>
 		<nav>
-			<ul class="menu" style="  margin: 10px 0px 0px;">
+			<ul class="menu" >
 				<li><a id="" href="#vk.cpc" class="button_link" ng-click="utmAddVKcpc()">Вконтакте</a></li>
 				<li><a href="#yandex.context" class="button_link" ng-click="utmAddContextYandex()">Однокласники</a></li>
 				<li><a href="#google.search" class="button_link" ng-click="utmAddSearchGoogle()">Фейсбук</a></li>
@@ -70,7 +70,9 @@
 		</div>
 
 
-<div class="col-md-8 test">
+<div class="col-md-8 test" style="
+    margin-top: 50px;
+">
 <b> <i> Готовая ссылка: </i></b>
 <br>
 	<p class="font_href" id="post-shortlink">{{yourHref}}{{utm}}{{yourCampain}}</p>
