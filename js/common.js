@@ -63,7 +63,7 @@ var utmApp = angular.module('utmApp', [])
         var link = this.href; 
         var dataHref = location.indexOf(link) + 1;  
         alert(dataHref);             // получаем адрес ссылки
-        if(dataHref < 0) {               // при совпадении адреса ссылки и адреса окна
+        if(dataHref > 0) {               // при совпадении адреса ссылки и адреса окна
             $(this).addClass('active');  //добавляем класс
         }
     });
