@@ -55,6 +55,45 @@ var utmApp = angular.module('utmApp', [])
 			};
     };
 
+
+    $scope.utmAddOKcpc = function() { //Кнопка отвечает за постановку ЮТМки для Однокласников
+    	var imputData = $(".input_href").val().indexOf('?') + 1; //Проверяет содержится ли ?
+    	
+
+    	if (imputData > 0) {
+  			$scope.utm ='&utm_source=ok&utm_medium=social&utm_campaign=';
+    	}
+			else {
+  			$scope.utm = '?utm_source=ok&utm_medium=social&utm_campaign=';
+			};
+    };   
+
+
+    $scope.utmAddFBcpc = function() { //Кнопка отвечает за постановку ЮТМки для Фейсбука
+    	var imputData = $(".input_href").val().indexOf('?') + 1; //Проверяет содержится ли ?
+    	
+
+    	if (imputData > 0) {
+  			$scope.utm ='&utm_source=fb&utm_medium=social&utm_campaign=';
+    	}
+			else {
+  			$scope.utm = '?utm_source=fb&utm_medium=social&utm_campaign=';
+			};
+    }; 
+
+    $scope.utmAddINScpc = function() { //Кнопка отвечает за постановку ЮТМки для Фейсбука
+    	var imputData = $(".input_href").val().indexOf('?') + 1; //Проверяет содержится ли ?
+    	
+
+    	if (imputData > 0) {
+  			$scope.utm ='&utm_source=inst&utm_medium=social&utm_campaign=';
+    	}
+			else {
+  			$scope.utm = '?utm_source=inst&utm_medium=social&utm_campaign=';
+			};
+    }; 
+
+
 }]);
 
 $(function () {                                      // Когда страница загрузится
