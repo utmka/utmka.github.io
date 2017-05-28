@@ -60,8 +60,9 @@ var utmApp = angular.module('utmApp', [])
  $(function () {                                      // Когда страница загрузится
     $('.container a').each(function () {             // получаем все нужные нам ссылки
         var location = window.location.href; // получаем адрес страницы
-        var link = this.indexOf(link) + 1;;                // получаем адрес ссылки
-        if(location < link) {               // при совпадении адреса ссылки и адреса окна
+        var link = this.href; 
+        var dataHref = location.indexOf(link) + 1;               // получаем адрес ссылки
+        if(dataHref > 0) {               // при совпадении адреса ссылки и адреса окна
             $(this).addClass('active');  //добавляем класс
         }
     });
