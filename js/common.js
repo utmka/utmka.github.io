@@ -4,6 +4,7 @@ var utmApp = angular.module('utmApp', [])
     $scope.utmAddSearchYandex = function() { //Кнопка отвечает за постановку ЮТМки для Яндекс:Поиск
     	var imputData = $(".input_href").val().indexOf('?') + 1; //Проверяет содержится ли ?
     	if (imputData > 0) {
+
   			$scope.utm = '&utm_source=yandex.search&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
     	}
 			else {
@@ -42,8 +43,25 @@ var utmApp = angular.module('utmApp', [])
 			};
     };
 
+    $scope.utmAddVKcpc = function() { //Кнопка отвечает за постановку ЮТМки для Вконтакте
+    	var imputData = $(".input_href").val().indexOf('?') + 1; //Проверяет содержится ли ?
+    	
+
+    	if (imputData > 0) {
+  			$scope.utm ='&utm_source=vk&utm_medium=social&utm_campaign=';
+    	}
+			else {
+  			$scope.utm = '?utm_source=vk&utm_medium=social&utm_campaign=';
+			};
+    };
 
 }]);
+
+ $('#vk.cpc').click(function() {
+	if ($('.input_campain').is(':visible')) {
+		$('.input_campain').hide('slow');
+	}
+});
 
 
 
