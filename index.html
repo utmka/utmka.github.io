@@ -21,6 +21,7 @@
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 <script src="js/jquery.liTranslit.js"></script>
+<script src="js/emerge.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="js/common.js"></script>
@@ -42,8 +43,8 @@
 		<div class="col-md-12">
 					<nav>
 			<ul class="menu" style="  margin: 10px 0px 0px;">
-				<li><a id="/" href="/" class="button_link" >Контекстная реклама</a></li>
-				<li><a href="/social" class="button_link">Социальные сети</a></li>
+				<li class="emerge" data-effect="relax" data-scale=".5" data-origin="bottom"><a id="/" href="/" class="button_link">Контекстная реклама</a></li>
+				<li class="emerge" data-effect="relax" data-scale=".5" data-origin="top"><a href="/social" class="button_link">Социальные сети</a></li>
 				
 			</ul>
 			</nav>
@@ -52,16 +53,16 @@
 			<div id="count">
 				<div class="col-md-12">
 				<h3>В поле вставляем ссылку</h3>
-			<input class ="input_href" type="text" size="100" placeholder="Сюда вставляется ссылка" ng-model="yourHref">
+			<input class ="input_href emerge" data-effect="relax" data-hold="150" data-scale=".5" data-origin="bottom" type="text" size="100" placeholder="Сюда вставляется ссылка" ng-model="yourHref">
 		</div>
 		<div class="col-md-12">
 		<h3>Выбираем рекламную сеть</h3>
 		<nav>
 			<ul class="menu" >
-				<li><a id="yandex.search_btm" href="#yandex.search" class="button_link" ng-click="utmAddSearchYandex()">Яндекс:Поиск</a></li>
-				<li><a href="#yandex.context" class="button_link" ng-click="utmAddContextYandex()">Яндекс:РСЯ</a></li>
-				<li><a href="#google.search" class="button_link" ng-click="utmAddSearchGoogle()">Гугл:Поиск</a></li>
-				<li><a href="#google.context" class="button_link" ng-click="utmAddContextGoogle()">Гугл:КМС</a></li>
+				<li class="emerge" data-effect="relax" data-hold="600" data-scale=".5" data-origin="top"><a id="yandex.search_btm" href="#yandex.search" class="button_link" ng-click="utmAddSearchYandex()">Яндекс:Поиск</a></li>
+				<li class="emerge" data-effect="relax" data-hold="300" data-scale=".5" data-origin="bottom"><a href="#yandex.context" class="button_link" ng-click="utmAddContextYandex()">Яндекс:РСЯ</a></li>
+				<li class="emerge" data-effect="relax" data-hold="400" data-scale=".5" data-origin="top"><a href="#google.search" class="button_link" ng-click="utmAddSearchGoogle()">Гугл:Поиск</a></li>
+				<li class="emerge" data-effect="relax" data-hold="200" data-scale=".5" data-origin="bottom"><a href="#google.context" class="button_link" ng-click="utmAddContextGoogle()">Гугл:КМС</a></li>
 				
 			</ul>
 			</nav>
