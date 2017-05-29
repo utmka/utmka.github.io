@@ -109,14 +109,20 @@ outline: none;
 	border: 1px solid #FDF06F;
 }
 
+.font_href {
+	font-weight: 600;
+	max-width: 450px;
+	
+}
+
+.break {
+	word-wrap: break-word;
+}
+
 :input-placeholder {
 color: #303030;
 font-weight: 100;
 }
 
-.font_href {
-	font-weight: 600;
-	max-width: 450px;
-	word-wrap: break-word;
-}
+
 
