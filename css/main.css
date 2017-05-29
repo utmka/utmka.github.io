@@ -122,6 +122,7 @@ font-weight: 100 !important;
 	height: 100px;
 	margin-bottom: 100px;
 	font-size: 22px;
+	word-break: break-word;
 }
 
 
