@@ -108,7 +108,8 @@ $(function () {                                      // Когда страни�
 
 $(function(){
   $('#utm_campain').liTranslit();
-})
+});
+
 
 
 
