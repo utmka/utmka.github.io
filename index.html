@@ -128,11 +128,12 @@
     <script type="text/javascript">
 
 	    
-        var goalParams = {myParam: input_val};
+
         function goalCallback () {
 	var input_val = $(".input_href").val();
 		console.log(input_val);
-            console.log('запрос в Метрику успешно отправлен');
+		        var goalParams = {myParam: input_val};
+            console.log('запрос в Метрику успешно отправлен' goalParams);
         }
     </script>	
 </body>
