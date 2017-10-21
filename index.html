@@ -131,10 +131,9 @@
 		
 	$('.button_link').click(function(event) {
 		var text_big = $(".input_href").val();
- yaCounter44924509.userParams({
-    user : {  // описание пользователя
-      type : text_big // бронзовый уровень
-    }
+
+  var yaParams = {input_text: text_big};
+  yaCounter44924509.reachGoal('allbutton', yaParams);
   });
 });
 	</script>
