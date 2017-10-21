@@ -125,17 +125,20 @@
 
 
 <script scr="js/copy.js"></script>
-    <script type="text/javascript">
 
-	    
 
-        function goalParams () {
-	var input_val = $(".input_href").val();
-		console.log(input_val);
-	var goalParams = {myParam: input_val};
-            console.log('запрос в Метрику успешно отправлен');
-		console.log(goalParams);
-        }
-    </script>	
+	<script>
+$('#yandex.search_btm').click(function(){
+var input_val = $(".input_href").val();
+	console.log(input_val);
+  yaCounterВАШ_СЧЕТЧИК.userParams({
+    user : {  // описание пользователя
+      input_name : input_val
+    }
+  });
+});
+	
+	</script>
+	
 </body>
 </html>
