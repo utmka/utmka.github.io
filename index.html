@@ -88,7 +88,7 @@
 		<h3>Выбираем рекламную сеть</h3>
 		<nav>
 			<ul class="menu" >
-				<li class="emerge" data-effect="relax" data-hold="600" data-scale=".5" data-origin="top"><a id="yandex.search_btm" href="#yandex.search" class="button_link" ng-click="utmAddSearchYandex()" onclick="yaCounter44924509.reachGoal('yandexsearch', goalParams);yaCounter44924509.reachGoal('allbutton'); return true;">Яндекс:Поиск</a></li>
+				<li class="emerge" data-effect="relax" data-hold="600" data-scale=".5" data-origin="top"><a id="yandex.search_btm" href="#yandex.search" class="button_link" ng-click="utmAddSearchYandex()" onclick="yaCounter44924509.reachGoal('yandexsearch');yaCounter44924509.reachGoal('allbutton'); return true;">Яндекс:Поиск</a></li>
 				<li class="emerge" data-effect="relax" data-hold="300" data-scale=".5" data-origin="bottom"><a href="#yandex.context" class="button_link" ng-click="utmAddContextYandex()">Яндекс:РСЯ</a></li>
 				<li class="emerge" data-effect="relax" data-hold="400" data-scale=".5" data-origin="top"><a href="#google.search" class="button_link" ng-click="utmAddSearchGoogle()">Гугл:Поиск</a></li>
 				<li class="emerge" data-effect="relax" data-hold="200" data-scale=".5" data-origin="bottom"><a href="#google.context" class="button_link" ng-click="utmAddContextGoogle()">Гугл:КМС</a></li>
@@ -131,7 +131,7 @@
 $('#yandex.search_btm').click(function(){
 var input_val = $(".input_href").val();
 	console.log(input_val);
-  yaCounterВАШ_СЧЕТЧИК.userParams({
+  yaCounter44924509.userParams({
     user : {  // описание пользователя
       input_name : input_val
     }
