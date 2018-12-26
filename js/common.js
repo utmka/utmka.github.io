@@ -5,20 +5,20 @@ var utmApp = angular.module('utmApp', [])
     	var imputData = $(".input_href").val().indexOf('?') + 1; //Проверяет содержится ли ?
     	if (imputData > 0) {
 
-  			$scope.utm = '&utm_source=direct&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
+  			$scope.utm = '&utm_source=yandex.search&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
     	}
 			else {
-  			$scope.utm = '?utm_source=direct&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
+  			$scope.utm = '?utm_source=yandex.search&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
 			};
     };
 
     $scope.utmAddContextYandex = function() { //Кнопка отвечает за постановку ЮТМки для Яндекс:РСЯ
     	var imputData = $(".input_href").val().indexOf('?') + 1; //Проверяет содержится ли ?
     	if (imputData > 0) {
-  			$scope.utm ='&utm_source=direct&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
+  			$scope.utm ='&utm_source=yandex.context&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
     	}
 			else {
-  			$scope.utm = '?utm_source=direct&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
+  			$scope.utm = '?utm_source=yandex.context&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}';
 			};
     };
 
